@@ -6,15 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "npx eslint \"./**/*.js\" --cache --cache-strategy content --fix"
+    "lint": "npx eslint \"./**/*.js\" --cache --cache-strategy content --fix",
+    "format": "prettier --write ."
   },
   "husky": {
     "hooks": {
-      "applypatch-msg": "echo \"[Husky] applypatch-msg\"",
-      "pre-applypatch": "echo \"[Husky] pre-applypatch\"",
-      "post-applypatch": "echo \"[Husky] post-applypatch\"",
-      "pre-commit": "echo \"[Husky] pre-commit\"",
-  
+      "pre-commit": "prettier --write . && git add -A ."
+    }
   },
   "dependencies": {
     "husky": "^8.0.3",
@@ -32,5 +30,4 @@
     "eslint-plugin-react": "^7.32.2",
     "prettier": "^2.8.4"
   }
-
 }
