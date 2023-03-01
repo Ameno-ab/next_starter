@@ -12,8 +12,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "npx eslint \"./**/*.js\" --cache --cache-strategy content --fix",
-      "prettier --write ."
+      "npx eslint",
+      "prettier --write"
     ]
   },
   "dependencies": {
