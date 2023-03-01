@@ -21,7 +21,7 @@ export default function Home() {
         <div className={styles.description}>
           <p>
             Get started by editing&nbsp;
-            { console.log("env",process.env.next)}
+            {console.log("env", process.env.next)}
             <code className={styles.code}>pages/index.js</code>
           </p>
           <div>
