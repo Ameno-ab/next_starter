@@ -7,15 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "npx eslint \"./**/*.js\" --cache --cache-strategy content --fix",
-    "format": "prettier --write ."
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "prettier --write . && git add -A ."
-    }
+    "format": "prettier --write .",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "husky": "^8.0.3",
     "next": "13.2.3",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -28,6 +23,7 @@
     "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
     "prettier": "^2.8.4"
   }
 }
