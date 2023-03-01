@@ -10,10 +10,10 @@
     "format": "prettier --write .",
     "prepare": "husky install"
   },
-  "lint-staged":{
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-        "prettier --write",
-        "npx eslint \"./**/*.js\" --cache --cache-strategy content --fix"
+  "lint-staged": {
+    "*.js": [
+      "npx eslint \"./**/*.js\" --cache --cache-strategy content --fix",
+      "prettier --write ."
     ]
   },
   "dependencies": {
