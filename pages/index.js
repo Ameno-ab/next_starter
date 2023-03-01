@@ -20,9 +20,13 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            Get started by editing&nbsp;
+                 Get started by editing&nbsp;
+           
+           
+           
+           
             {console.log("env", process.env.next)}
-            <code className={styles.code}>pages/index.js</code>
+                                        <code className={styles.code}>pages/index.js</code>
           </p>
           <div>
             <a
